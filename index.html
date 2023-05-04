@@ -7,9 +7,27 @@
   <title>cep</title>
   <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body>
-  <h1 class="text-3xl underline text-red-900">
-    Hello world!
-  </h1>
+<body class="h-screen">
+
+  <div class="h-full bg-slate-500">
+    <div class="container mx-auto">
+
+      <form class="bg-slate-900 rounded-md">
+
+        <div class="mb-6">
+          <label class="block text-sm text-white" for="name">name</label>
+          <input class="block" type="text" name="name" id="name" data-form="name" placeholder="full name">
+        </div>
+        
+        <div class="mb-6 border border-black ">
+          <label class="block text-white text-sm focus:border-orange-700" for="">cep</label>
+          <input class="block  w-full placeholder:text-cyan-950" type="text" name="cep" id="cep" data-form="cep" placeholder="number cep">
+        </div>
+      
+      </form>
+
+    </div> 
+  </div>
+  
 </body>
 </html>
