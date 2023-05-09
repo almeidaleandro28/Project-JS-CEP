@@ -12,7 +12,7 @@
   <div class="h-full bg-slate-500">
     <div class="container mx-auto">
 
-      <form class="bg-slate-900 rounded-md pt-4 pb-1 w-96 m-auto pl-3 pr-3">
+      <form class="bg-slate-900 rounded-md pt-4 pb-1 w-96 m-auto pl-3 pr-3" data-form="form">
 
         <div class="mb-6">
           <label class="block text-sm text-white mb-2" for="name">name</label>
@@ -24,25 +24,23 @@
           <input class="block w-full border-gray-700 rounded-md placeholder:text-cyan-950  focus:border-orange-700 hover:bg-orange-700" type="text" name="cep" id="cep" data-form="cep" placeholder="number cep">
         </div>
 
-        <button class="text-gray-900 bg-slate-500 px-5 py-2 mr-2 mb-2 font-medium rounded-md focus:bg-white focus:text-orange-900 focus:ring-4 hover:bg-white hover:text-orange-900" type="submit">send</button>
+        <button class="text-gray-900 bg-slate-500 px-5 py-2 mr-2 mb-2 font-medium rounded-md focus:bg-white focus:text-orange-900 focus:ring-4 hover:bg-white hover:text-orange-900" type="button" data-btn="send">send</button>
       
       </form>
 
     </div> 
 
     <section class="h-auto">
-      <div class="container mx-auto">
-        <h1 class="">
-          registration data
-        </h1>
-        <ul>
-          <li data-info="name">name</li>
-          <li data-info="cep">cep</li>
+      <div class="container mx-auto p-2">
+        <h1 class="text-gray-300 font-bold uppercase text-center">registration data</h1>
+        <ul data-info="list">
+          
         </ul>
       </div>
     </section>
 
   </div>
-  
+
+  <script type="module" src="./src/app.js"></script>
 </body>
 </html>
